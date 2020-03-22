@@ -64,3 +64,49 @@ const numbers = [1,2,3,4,5,6];
 numbers.push(7);
 console.log(numbers);
 
+//datatypes in JavaScript
+//Primitive datatypes: Stored in the location the variable accesses stored on the stack
+// Reference Data Types: Accessed by reference, Objects that are stored on the Heap, A pointer to a location in memory
+
+// Six Primitive Datatypes
+/*String, Number, Boolean, Null, Undefined, Symbols(ES6) */
+
+//Reference Datatypes
+/*Arrays, Objects Literals, Functions, Dates, Amything Else */
+
+//JS is Dynamically Typed Language
+/*Types are associated with values not variables
+the same variables can hold multiple types
+we do not need to specify types
+Most other languages are statically types
+There are supersets of JS and addons to allow static typiing(Typescript, Flow)*/
+
+
+//PRIMITIVE
+
+//String
+const name = 'John Doe';
+//number 
+const age = 45;
+//Boolean
+const haskids= true
+//Null
+const car=null;
+//Symbol
+const sym = Symbol();
+
+//REFERENCE TYPES -Objects
+//Array
+
+const hobbies= ['movies', 'music'];
+
+//Object literal
+const address ={
+    city: 'Boston',
+    state: 'MA'
+}
+
+const today= new Date();
+
+console.log(typeof today);
+console.log(today);

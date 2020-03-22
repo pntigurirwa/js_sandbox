@@ -173,56 +173,86 @@
 // console.log(val);
 
 // String Methods & Concatenation
-const firstName= 'William';
-const lastNAme= 'Johnson';
-const age= 36;
-let val;
-const str= 'Hello there my name is Prosper';
-val= firstName+lastNAme;
- //Concatenation
+// const firstName= 'William';
+// const lastNAme= 'Johnson';
+// const age= 36;
+// let val;
+// const str= 'Hello there my name is Prosper';
+// val= firstName+lastNAme;
+//  //Concatenation
 
-val= firstName+ '  ' +lastNAme;
+// val= firstName+ '  ' +lastNAme;
 
-//Append
-val= 'Brad';
-val+= 'Traversy';
-val = 'Hello, my name is  ' +firstName+ ' and I am' +age
+// //Append
+// val= 'Brad';
+// val+= 'Traversy';
+// val = 'Hello, my name is  ' +firstName+ ' and I am' +age
 
-//escape
-val = 'that\'s awesome, I can\'t wait';
+// //escape
+// val = 'that\'s awesome, I can\'t wait';
 
-//Length
-val= firstName.length;
+// //Length
+// val= firstName.length;
 
-//Concat()
-val= firstName.concat('', lastNAme);
+// //Concat()
+// val= firstName.concat('', lastNAme);
 
-//Change case
-val= firstName.toUpperCase();
-val= lastNAme.toLowerCase();
+// //Change case
+// val= firstName.toUpperCase();
+// val= lastNAme.toLowerCase();
 
-val= firstName[4];
+// val= firstName[4];
 
-//Index of()
-val= firstName.indexOf('l');
-val= firstName.lastIndexOf('l');
-// charAt()
-val= firstName.charAt('2');
-//Get last Char
-val= firstName.charAt(firstName.length -1);
-//Substring
-val= firstName.substring(0,4);
+// //Index of()
+// val= firstName.indexOf('l');
+// val= firstName.lastIndexOf('l');
+// // charAt()
+// val= firstName.charAt('2');
+// //Get last Char
+// val= firstName.charAt(firstName.length -1);
+// //Substring
+// val= firstName.substring(0,4);
 
-//Slice()
-val= firstName.slice(0.4)
-val = firstName.slice(-3);
+// //Slice()
+// val= firstName.slice(0.4)
+// val = firstName.slice(-3);
 
-//split()
-val= str.split(' ');
+// //split()
+// val= str.split(' ');
 
-//replace
-val= str.replace('Prosper', 'Jack');
+// //replace
+// val= str.replace('Prosper', 'Jack');
 
-// Includes()
-val= str.includes('foo');
-console.log(val);
+// // Includes()
+// val= str.includes('foo');
+// console.log(val);
+
+
+//Template literals
+
+const name= 'John';
+const age= 39;
+const job= 'web Developper';
+const city= 'Chicago';
+
+//Without template strings (ES5)
+
+html= '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: '+ job + '</li><li>City:' + city + '</li><li>'
+
+function hello(){
+    return 'hello';
+}
+//With Templates Strings (es6)
+
+html=`
+<ul>
+    <li>Name: ${name}</li>  
+    <li>Age: ${age}</li> 
+    <li>Job: ${job}</li> 
+    <li>City: ${city}</li> 
+    <li>${5+5}</li>
+    <li> ${hello()}</li>  
+    <li> ${age > 30 ? 'Over 30' : 'Under 30' }</li>   
+`
+
+document.body.innerHTML= html;

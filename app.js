@@ -113,39 +113,61 @@
 
 // // TYPE CONVERSION
 
+// let val;
+// //Number to String 
+// val = String (555);
+// val = String(4+4);
+// //Bool to String
+// val= String(true);
+// //Date to String
+// val= String (new Date());
+// //toString 
+// val = (5).toString();
+// val = (true).toString();
+// //String to number
+// val= Number ('5');
+// val= Number (true);
+// val =Number(false);
+// val= Number (null);
+// val= Number('Hello');
+// val= Number([1,2,3,4]);
+
+
+// val= parseInt('100.30');
+// val= parseFloat('100.30');
+
+// //Output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.toFixed(2));
+
+
+// const val1= String(5);
+// const val2= 6;
+// const sum= Number(val1+val2);
+
+// console.log(sum);
+// console.log(typeof sum);
+
+const num1= 100;
+const num2= 50;
 let val;
-//Number to String 
-val = String (555);
-val = String(4+4);
-//Bool to String
-val= String(true);
-//Date to String
-val= String (new Date());
-//toString 
-val = (5).toString();
-val = (true).toString();
-//String to number
-val= Number ('5');
-val= Number (true);
-val =Number(false);
-val= Number (null);
-val= Number('Hello');
-val= Number([1,2,3,4]);
+//Simple Math
+val= num1+num2;
+val= num1*num2;
+val= num1-num2;
+val= num1/num2;
+val= num1%num2;
 
-
-val= parseInt('100.30');
-val= parseFloat('100.30');
-
-//Output
+//MAth objects
+val= Math.PI;
+val= Math.E;
+val= Math.round(2.4);
+val= Math.ceil(2.4);
+val= Math.floor(2.8);
+val= Math.abs(-3);
+val= Math.pow(8,2);
+val= Math.min(2,45,21,58,96,321,45);
+val= Math.max(2,45,21,58,96,321,45);
+val= Math.random();
 console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(2));
-
-
-const val1= String(5);
-const val2= 6;
-const sum= Number(val1+val2);
-
-console.log(sum);
-console.log(typeof sum);
-

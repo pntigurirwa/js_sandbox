@@ -149,25 +149,80 @@
 // console.log(sum);
 // console.log(typeof sum);
 
-const num1= 100;
-const num2= 50;
-let val;
-//Simple Math
-val= num1+num2;
-val= num1*num2;
-val= num1-num2;
-val= num1/num2;
-val= num1%num2;
+// const num1= 100;
+// const num2= 50;
+// let val;
+// //Simple Math
+// val= num1+num2;
+// val= num1*num2;
+// val= num1-num2;
+// val= num1/num2;
+// val= num1%num2;
 
-//MAth objects
-val= Math.PI;
-val= Math.E;
-val= Math.round(2.4);
-val= Math.ceil(2.4);
-val= Math.floor(2.8);
-val= Math.abs(-3);
-val= Math.pow(8,2);
-val= Math.min(2,45,21,58,96,321,45);
-val= Math.max(2,45,21,58,96,321,45);
-val= Math.random();
+// //MAth objects
+// val= Math.PI;
+// val= Math.E;
+// val= Math.round(2.4);
+// val= Math.ceil(2.4);
+// val= Math.floor(2.8);
+// val= Math.abs(-3);
+// val= Math.pow(8,2);
+// val= Math.min(2,45,21,58,96,321,45);
+// val= Math.max(2,45,21,58,96,321,45);
+// val= Math.random();
+// console.log(val);
+
+// String Methods & Concatenation
+const firstName= 'William';
+const lastNAme= 'Johnson';
+const age= 36;
+let val;
+const str= 'Hello there my name is Prosper';
+val= firstName+lastNAme;
+ //Concatenation
+
+val= firstName+ '  ' +lastNAme;
+
+//Append
+val= 'Brad';
+val+= 'Traversy';
+val = 'Hello, my name is  ' +firstName+ ' and I am' +age
+
+//escape
+val = 'that\'s awesome, I can\'t wait';
+
+//Length
+val= firstName.length;
+
+//Concat()
+val= firstName.concat('', lastNAme);
+
+//Change case
+val= firstName.toUpperCase();
+val= lastNAme.toLowerCase();
+
+val= firstName[4];
+
+//Index of()
+val= firstName.indexOf('l');
+val= firstName.lastIndexOf('l');
+// charAt()
+val= firstName.charAt('2');
+//Get last Char
+val= firstName.charAt(firstName.length -1);
+//Substring
+val= firstName.substring(0,4);
+
+//Slice()
+val= firstName.slice(0.4)
+val = firstName.slice(-3);
+
+//split()
+val= str.split(' ');
+
+//replace
+val= str.replace('Prosper', 'Jack');
+
+// Includes()
+val= str.includes('foo');
 console.log(val);

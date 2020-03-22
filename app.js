@@ -230,29 +230,97 @@
 
 //Template literals
 
-const name= 'John';
-const age= 39;
-const job= 'web Developper';
-const city= 'Chicago';
+// const name= 'John';
+// const age= 39;
+// const job= 'web Developper';
+// const city= 'Chicago';
 
-//Without template strings (ES5)
+// //Without template strings (ES5)
 
-html= '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: '+ job + '</li><li>City:' + city + '</li><li>'
+// html= '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: '+ job + '</li><li>City:' + city + '</li><li>'
 
-function hello(){
-    return 'hello';
+// function hello(){
+//     return 'hello';
+// }
+// //With Templates Strings (es6)
+
+// html=`
+// <ul>
+//     <li>Name: ${name}</li>  
+//     <li>Age: ${age}</li> 
+//     <li>Job: ${job}</li> 
+//     <li>City: ${city}</li> 
+//     <li>${5+5}</li>
+//     <li> ${hello()}</li>  
+//     <li> ${age > 30 ? 'Over 30' : 'Under 30' }</li>   
+// `
+
+// document.body.innerHTML= html;
+
+// create some arrays
+
+const numbers= [45,45,78,12,54];
+const numbers2= new Array(22,33,55,66,99,88);
+const fruits= ['Apple', 'Banana', 'Orange', 'Pear'];
+const mixed =[22,'Hello', true, undefined, null, {a:1, b:2}, new Date()];
+
+let val;
+
+// get the array length
+val= numbers.length;
+
+//check if is array
+val = Array.isArray(numbers);
+
+//get a single value from array
+val = numbers[3];
+
+//Insert into array
+numbers[2] = 10000;
+
+//Find index of a value
+val = numbers.indexOf(12);
+
+// //Mutating ARRAYs add on to end 
+// numbers.push(250);
+
+// //add on front 
+// numbers.unshift(250);
+
+// //Take off from end
+// numbers.pop();
+
+// //take off from front
+// numbers.shift();
+
+// //Splice Values
+// numbers.splice(1,3);
+
+// //Rreverse 
+// numbers.reverse();
+
+ //concatenate array
+//  val= numbers.concat(numbers2); 
+
+// //Sorting
+// val = fruits.sort();
+// val = numbers.sort();
+
+// //use the "Compare function"
+// val = numbers.sort(function(x,y) {
+//     return x-y;
+// });
+
+// // Reverse sort 
+// val = numbers.sort(function(x,y) {
+//     return y-x;
+// });
+
+// Find 
+function under50(num) {
+  return num < 50;  
 }
-//With Templates Strings (es6)
+val= numbers.find (under50);
 
-html=`
-<ul>
-    <li>Name: ${name}</li>  
-    <li>Age: ${age}</li> 
-    <li>Job: ${job}</li> 
-    <li>City: ${city}</li> 
-    <li>${5+5}</li>
-    <li> ${hello()}</li>  
-    <li> ${age > 30 ? 'Over 30' : 'Under 30' }</li>   
-`
-
-document.body.innerHTML= html;
+console.log(numbers);
+console.log(val);

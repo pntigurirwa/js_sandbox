@@ -300,27 +300,27 @@ val = numbers.indexOf(12);
 // numbers.reverse();
 
  //concatenate array
-//  val= numbers.concat(numbers2); 
+ val= numbers.concat(numbers2); 
 
-// //Sorting
-// val = fruits.sort();
-// val = numbers.sort();
+//Sorting
+val = fruits.sort();
+val = numbers.sort();
 
-// //use the "Compare function"
-// val = numbers.sort(function(x,y) {
-//     return x-y;
-// });
+//use the "Compare function"
+val = numbers.sort(function(x,y) {
+    return x-y;
+});
 
-// // Reverse sort 
-// val = numbers.sort(function(x,y) {
-//     return y-x;
-// });
+// Reverse sort 
+val = numbers.sort(function(x,y) {
+    return y-x;
+});
 
 // Find 
 function under50(num) {
   return num < 50;  
 }
-val= numbers.find (under50);
+val= numbers.find (under50)
 
 console.log(numbers);
 console.log(val);

@@ -13,7 +13,7 @@ function loadData() {
   xhr.onprogress = function () {
     console.log("READYSTATE", xhr.readyState);
   };
-
+  ``;
   xhr.onload = function () {
     console.log("READYSTATE", xhr.readyState);
     if (this.status === 200) {

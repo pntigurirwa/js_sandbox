@@ -39,7 +39,7 @@
 function* createIds() {
   let index = 1;
 
-  while(true) {
+  while (true) {
     yield index++;
   }
 }
